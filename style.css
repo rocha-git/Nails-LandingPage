@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+
+/* -----------------------------------------------------------------------
+                                Estilização Global
+----------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FDF8F5;
+    color: #1F2937;
+}
+
+.serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.italic {
+    font-style: italic;
+}
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+section, footer {
+    padding: 60px 185px;
+}
+
+.nude {
+    color: #A67C52;
+}
+
+.nude-2 {
+    color: #FCE7F3;
+}
+
+/* -----------------------------------------------------------------------
+                                Header
+----------------------------------------------------------------------- */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px 20px;
+
+    background-color: #fffefd8f;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #A67C52;
+}
+
+.nav-header ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-header a {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    color: #1F2937;
+}
+
+.btn-reservar {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #FFFEFD;
+    background-color: #A67C52;
+    border: 1px solid #00000015;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+/* -----------------------------------------------------------------------
+                                Seção Hero
+----------------------------------------------------------------------- */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3rem;
+}
+
+.hero h2 {
+    font-size: 4.5rem;
+    font-weight: lighter;
+    line-height: 60px;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #4B5563;
+    letter-spacing: 1px;
+}
+
+.hero h2, .hero p {
+    grid-column: 1;
+}
+
+.nav-hero {
+    grid-column: 1;
+}
+
+.nav-hero {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-servicos {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #FFFFFF;
+    background-color: #A67C52;
+    border-radius: 50px;
+    padding: 20px 40px;
+
+    box-shadow: 0px 20px 40px -15px rgba(0,0,0,0.51);
+}
+
+.btn-servicos:hover {
+    background-color: #8B5E3C;
+    transition: all 0.3s ease;
+}
+
+.btn-wpp {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #1F2937;
+    background-color: #FDF8F5;
+    border: 1px solid #00000015;
+    border-radius: 50px;
+    padding: 20px 40px;
+
+    box-shadow: 0px 20px 40px -15px rgba(0,0,0,0.51);
+}
+
+.btn-wpp:hover {
+    background-color: #FFFEFD;
+    transition: all 0.3s ease;
+}
+
+.fa-whatsapp {
+    margin-right: 10px;
+}
+
+.left-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero-badge {
+    font-size: 14px;
+    font-weight: 600;
+    color: #A67C52;
+
+    background-color: #FFFEFD;
+    border: 1px solid #00000015;
+    border-radius: 50px;
+    padding: 1px 20px;
+
+    place-self: start;
+}
+
+.container-img {
+    background-image: url(/img/photo-1604654894610-df63bc536371.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 470px;
+    height: 450px;
+    
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+
+    position: relative;
+}
+
+.float-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 30px;
+
+    box-shadow: 0px 20px 40px -15px rgba(0,0,0,0.51);   
+
+    position: absolute;
+    bottom: 0px;
+    left: -10%;
+   
+    transform: translateX(-50%);
+    transform: translateY(10%);
+}
+
+.float-text h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #A67C52;
+}
+
+.float-text p {
+    font-size: 0.8rem;
+    color: #4B5563;
+}
+
+/* -----------------------------------------------------------------------
+                                Seção serviços
+----------------------------------------------------------------------- */
+
+.section-servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    background-color: #FFFFFF;
+}
+
+.section-servicos h2 {
+    display: flex;
+    justify-content: center;
+
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-align: center;
+    position: relative;
+
+    padding: 20px;
+}
+
+.section-servicos h2::after {
+    content: '';
+    display: block;
+    width: 8%;
+    height: 5px;
+    background-color: #A67C52;
+
+    bottom: 0;
+    position: absolute;
+}
+
+.container-card-servico {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.fa-gem, .fa-shoe-prints, .fa-hand-sparkles {
+    color: #A67C52;
+    transform: scale(1.5);
+
+    margin-bottom: 15px;
+}
+
+.card-servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #FFFEFD;
+    border: 1px solid #00000015;
+    border-radius: 20px;
+    padding: 30px 20px;
+
+    width: 250px;
+}
+
+.card-servico:hover {
+    box-shadow: 0px 20px 40px -15px rgba(0,0,0,0.51);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.icon-servico {
+    background-color: #FDF8F5;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.descricao-card {
+    color: #4B5563;
+}
+
+#preco {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* -----------------------------------------------------------------------
+                                Seção galeria
+----------------------------------------------------------------------- */
+
+.section-galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-galeria h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.container-info-galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-info-galeria {
+    color: #1F2937;
+}
+
+.container-info-galeria a {
+    color: #A67C52;
+    text-decoration: underline;
+}
+
+.container-info-galeria i {
+    margin-right: 10px;
+}
+
+.card-galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.img-galeria {
+    background-size: cover;
+    background-image: url(/img/photo-1604654894610-df63bc536371.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 250px;
+
+    border-radius: 20px;
+    
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.img-galeria:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.3);
+}
+
+/* -----------------------------------------------------------------------
+                                Seção agendamento
+----------------------------------------------------------------------- */
+.section-agenda {
+    background-color: #FFFFFF;
+    
+}
+
+.section-agenda h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.card-agenda {
+    background-color: #A67C52;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    padding: 80px 100px;
+
+    border-radius: 40px;
+}
+
+.left-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon-agenda, .left-card p {
+    color: #FFFFFF;
+}
+
+.icon-agenda {
+    margin-right: 10px;
+    background-color: #AF8963;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.form-agenda {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    gap: 20px;
+    padding: 30px;
+
+    width: 350px;
+    border-radius: 10px;
+
+    background-color: #FFFFFF;
+    box-shadow: 9px 11px 11px -8px rgba(0,0,0,0.6);
+}
+
+.form-agenda input, .form-agenda select {
+    padding: 15px;
+    border: 1px solid #00000015;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.btn-agenda {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #FFFEFD;
+    background-color: #A67C52;
+    border: 1px solid #00000015;
+    border-radius: 10px;
+    padding: 15px 20px;
+
+    cursor: pointer;
+
+    width: 100%;
+}
+
+.btn-agenda:hover {
+    background-color: #8B5E3C;
+    transition: all 0.3s ease;
+}
+
+/* -----------------------------------------------------------------------
+                                Seção rodapé
+----------------------------------------------------------------------- */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50%;
+}
+
+footer p {
+    color: #4B5563;
+}
+
+.left-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-social-footer {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-social-footer a {
+    color: #1F2937;
+}
+
+.right-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-footer h4 {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+.right-footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-footer a {
+    color: #4B5563;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+}
+
+.direitos {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    font-size: 0.75rem;
+}
+

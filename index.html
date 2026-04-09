@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Studio Andreia</title>
+</head>
+<body>
+    <header>
+        <h1 class="serif logo">Studio Andreia</h1>
+        <nav class="nav-header">
+            <ul>
+                <li><a href="#">INÍCIO</a></li>
+                <li><a href="#">SERVIÇOS</a></li>
+                <li><a href="#">GALERIA</a></li>
+                <li><a href="#">AGENDAR</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-reservar">RESERVAR AGORA</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="left-hero">
+                <span class="hero-badge">BELEZA & CUIDADO</span>
+                <h2 class="serif">Realce a sua<br> <span class="nude italic">beleza natural.</span></h2>
+                <p>Especialista em unhas perfeitas. Proporcionamos uma experiência de spa exclusiva para mãos e pés com os melhores produtos do mercado.</p>
+
+                <div class="nav-hero">
+                    <a href="#" class="btn-servicos">Ver Serviços</a>
+                    <a href="#" class="btn-wpp"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+                </div>
+            </div>
+         
+            <div class="container-img">
+                <div class="float-text">
+                    <h3>100%</h3>
+                    <p>Material esterilizado</p>
+                </div>
+                <!-- <img src="/img/photo-1604654894610-df63bc536371.jpg" alt="Foto de uma mulher com unhas decoradas" class="hero-image"> -->
+            </div>
+           
+        </section>
+
+        <section class="section-servicos">
+            <h2 class="serif">Nossos Serviços</h2>
+
+            <div class="container-card-servico">
+                <div class="card-servico">
+                    <i class="fa-solid fa-hand-sparkles icon-servico"></i>
+
+                    <h3>Manicure Clássica</h3>
+
+                    <p class="descricao-card">Cutilagem, esmaltação e hidratação profunda para mãos impecáveis.</p>
+
+                    <p id="preco" class="nude italic">A partir de R$ 35</p>
+                </div>
+
+                 <div class="card-servico">
+                    <i class="fa-solid fa-shoe-prints icon-servico"></i>
+
+                    <h3>Pedicure Spa</h3>
+
+                    <p class="descricao-card">Tratamento completo com esfoliação, massagem e cuidado com os pés.</p>
+
+                    <p id="preco" class="nude italic">A partir de R$ 45</p>
+                </div>
+
+                <div class="card-servico">
+                    <i class="fa-solid fa-gem icon-servico"></i>
+    
+                    <h3>Alongamentos</h3>
+    
+                    <p class="descricao-card">Fibra de vidro ou Gel para quem busca resistência e design moderno.</p>
+    
+                    <p id="preco" class="nude italic">A partir de R$ 120</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-galeria">
+            <h2 class="serif">Trabalhos Realizados</h2>
+            <div class="container-info-galeria">
+                <p>Inspire-se com nossa galeria de arte e acabamentos exclusivos.</p>
+                <a href="https://www.instagram.com/studio_andreiarocha/" target="_blank"><i class="fa-brands fa-instagram"></i>Ver no Instagram</a>
+            </div>
+          
+            <div class="card-galeria">
+                    <div class="img-galeria"></div>
+                    <div class="img-galeria"></div>
+                    <div class="img-galeria"></div>
+                    <div class="img-galeria"></div>
+            </div>
+        </section>
+
+        <section class="section-agenda">
+            <div class="card-agenda">
+                <div class="left-card">
+                    <h2 class="serif">Agende seu horário e sinta-se <span class="italic nude-2">maravilhosa</span></h2>
+                    <p><i class="fa-solid fa-clock icon-agenda"></i>Segunda a Sábado: 09:00 às 19:00</p>
+                    <p><i class="fa-solid fa-location-dot icon-agenda"></i>Rua das Flores, 123 - Centro, São Paulo</p>
+                    <p><i class="fa-solid fa-phone icon-agenda"></i>(11) 99999-9999</p>
+                </div>
+
+                <form action="" class="form-agenda">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <label for="servico">Serviço Desejado</label>
+                    <select id="servico" name="servico" required>
+                        <option value="manicure">Manicure Simples</option>
+                        <option value="pedicure">Pedicure Spa</option>
+                        <option value="alongamento">Alongamento em Gel</option>
+                        <option value="fibra">Fibra de Vidro</option>
+                        <option value="combo">Combo(Mão + Pé)</option>
+                    </select>
+                    <label for="data">Data Preferencial</label>
+                    <input type="date" id="data" name="data" required>
+
+                    <button type="submit" class="btn-agenda">Agendar</button>
+                </form>
+            </div>
+            
+        </section>
+
+        <footer>
+            <div class="left-footer">
+                 <h2 class="serif logo">Studio Nails</h2>
+                <p>Elevando o padrão de cuidados estéticos para suas unhas. Proporcionando bem-estar e autoestima com as melhores técnicas do mercado.</p>
+                <div class="nav-social-footer">
+                    <a href="https://www.instagram.com/studio_andreiarocha/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/studioandreiapinto" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.pinterest.com/studio_andreiarocha/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="right-footer">
+                <h4>LINKS RÁPIDOS</h4>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Agendar</a></li>
+            </div>
+            
+            <div class="direitos">
+                <p>© 2026 Studio Nails. Todos os direitos reservados. Design focado em elegância.</p>
+            </div>
+            
+        </footer>
+    </main>
+</body>
+</html>
