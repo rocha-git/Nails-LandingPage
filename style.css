@@ -334,6 +334,7 @@ header {
 .section-galeria {
     display: flex;
     flex-direction: column;
+    
     gap: 20px;
 }
 
@@ -370,11 +371,10 @@ header {
 
 .img-galeria {
     background-size: cover;
-    background-image: url(/img/photo-1604654894610-df63bc536371.jpg);
     background-position: center;
     background-repeat: no-repeat;
 
-    width: 100%;
+    max-width: 100%;
     height: 250px;
 
     border-radius: 20px;
@@ -382,6 +382,30 @@ header {
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+#img-1 {
+    background-image: url(/img/WhatsApp\ Image\ 2026-04-06\ at\ 19.38.02\ \(1\).jpeg);  
+}
+
+#img-2 {
+    background-image: url(/img/WhatsApp\ Image\ 2026-04-06\ at\ 19.38.00\ \(2\).jpeg);
+}
+
+#img-3 {
+    background-image: url(/img/WhatsApp\ Image\ 2026-04-06\ at\ 18.15.27\ \(3\).jpeg);
+}
+
+#img-4 {
+    background-image: url(/img/WhatsApp\ Image\ 2026-04-06\ at\ 19.38.03\ \(5\).jpeg);
+}
+
+#img-5 {
+    background-image: url(/img/WhatsApp\ Image\ 2026-04-06\ at\ 19.38.02\ \(3\).jpeg);
+}
+
+#img-6 {
+    background-image: url(/img/WhatsApp\ Image\ 2026-04-06\ at\ 19.38.04.jpeg);
 }
 
 .img-galeria:hover {
@@ -394,7 +418,6 @@ header {
 ----------------------------------------------------------------------- */
 .section-agenda {
     background-color: #FFFFFF;
-    
 }
 
 .section-agenda h2 {
@@ -535,3 +558,188 @@ footer p {
     font-size: 0.75rem;
 }
 
+/* -----------------------------------------------------------------------
+                                Media queries
+----------------------------------------------------------------------- */
+
+@media (max-width: 576px) {
+
+    .nav-header {
+        display: none
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero-badge {
+        font-size: 12px;
+    }
+
+    .btn-servicos, .btn-wpp {
+        font-size: 0.7rem;
+    }
+
+    .float-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .float-text p {
+        font-size: 0.7rem;
+    }
+
+    .section-servicos h2 {
+        font-size: 2rem;
+    }
+
+    #preco {
+        font-size: 1rem;
+    }
+
+    .section-galeria h2 {
+        font-size: 2rem;
+    }
+
+    .section-agenda h2 {
+        font-size: 2.5rem;
+    }
+
+    .btn-agenda {
+        font-size: 0.7rem;
+    }
+
+    .right-footer h4, .right-footer a {
+        font-size: 0.8rem;
+    }
+
+    .direitos {
+        font-size: 0.7rem;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero-badge {
+        font-size: 12px;
+    }
+
+    .btn-servicos, .btn-wpp {
+        font-size: 0.7rem;
+    }
+
+    .float-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .float-text p {
+        font-size: 0.7rem;
+    }
+
+    .section-servicos h2 {
+        font-size: 2rem;
+    }
+
+    #preco {
+        font-size: 1rem;
+    }
+
+    .section-galeria h2 {
+        font-size: 2rem;
+    }
+
+    .section-agenda h2 {
+        font-size: 2.5rem;
+    }
+
+    .btn-agenda {
+        font-size: 0.7rem;
+    }
+
+    .right-footer h4, .right-footer a {
+        font-size: 0.8rem;
+    }
+
+    .direitos {
+        font-size: 0.7rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-hero {
+        justify-content: center;
+    }
+
+    .float-text {
+        transform: scale(.7);
+    }
+
+    .container-info-galeria {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section-galeria {
+        padding: 60px 30px;
+        text-align: center;
+    }
+
+    .card-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-agenda {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .card-agenda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .direitos {
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0px;
+        grid-template-columns: 50% 50%;
+       
+        
+    }
+
+    .container-img{
+        width: 22rem;
+        border-top-right-radius: 40%;
+        border-top-left-radius: 40%;
+    }
+
+    .float-text{
+        display: none;
+    }
+}
