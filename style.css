@@ -106,7 +106,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .hero h2 {
@@ -676,14 +676,7 @@ footer p {
 
     .hero {
         grid-template-columns: 1fr;
-    }
-
-    .nav-hero {
-        justify-content: center;
-    }
-
-    .float-text {
-        transform: scale(.7);
+        padding: 30px;
     }
 
     .container-info-galeria {
@@ -726,20 +719,66 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .hero {
-        padding: 60px 0px;
-        grid-template-columns: 50% 50%;
-       
-        
+
+    .nav-header {
+        display: none
+    }
+
+   .hero {
+        grid-template-columns: 1fr;
+        padding: 30px;
     }
 
     .container-img{
-        width: 22rem;
-        border-top-right-radius: 40%;
-        border-top-left-radius: 40%;
+        display: none;
+    }
+
+    .nav-hero {
+        justify-content: center;
+    }
+
+     .btn-servicos, .btn-wpp {
+        font-size: 0.7rem;
     }
 
     .float-text{
         display: none;
+    }
+
+    .section-galeria {
+        padding: 60px 30px;
+        text-align: center;
+    }
+
+    .card-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-agenda {
+        justify-content: center;
+        padding: 10px;
+    }
+
+     .card-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-agenda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .direitos {
+        text-align: center;
+        padding: 20px 0;
     }
 }
