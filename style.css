@@ -386,27 +386,27 @@ header {
 }
 
 #img-1 {
-    background-image: url(/img/WhatsApp\ Image\ 2026-04-06\ at\ 19.38.02\ \(1\).jpeg);  
+    background-image: url("img/WhatsApp Image 2026-04-06 at 19.38.02 (1).jpeg");  
 }
 
 #img-2 {
-    background-image: url(/img/WhatsApp\ Image\ 2026-04-06\ at\ 19.38.00\ \(2\).jpeg);
+    background-image: url("img/WhatsApp Image 2026-04-06 at 19.38.00 (2).jpeg");
 }
 
 #img-3 {
-    background-image: url(/img/WhatsApp\ Image\ 2026-04-06\ at\ 18.15.27\ \(3\).jpeg);
+    background-image: url("img/WhatsApp Image 2026-04-06 at 18.15.27 (3).jpeg");
 }
 
 #img-4 {
-    background-image: url(/img/WhatsApp\ Image\ 2026-04-06\ at\ 19.38.03\ \(5\).jpeg);
+    background-image: url("img/WhatsApp Image 2026-04-06 at 19.38.03 (5).jpeg");
 }
 
 #img-5 {
-    background-image: url(/img/WhatsApp\ Image\ 2026-04-06\ at\ 19.38.02\ \(3\).jpeg);
+    background-image: url("img/WhatsApp Image 2026-04-06 at 19.38.02 (3).jpeg");
 }
 
 #img-6 {
-    background-image: url(/img/WhatsApp\ Image\ 2026-04-06\ at\ 19.38.04.jpeg);
+    background-image: url("img/WhatsApp Image 2026-04-06 at 19.38.04.jpeg");
 }
 
 .img-galeria:hover {
