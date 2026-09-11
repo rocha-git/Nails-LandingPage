@@ -105,6 +105,7 @@ header {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    height: 100dvh;
 
     gap: 5rem;
 }
@@ -585,6 +586,10 @@ footer p {
         font-size: 0.7rem;
     }
 
+    .container-img {
+        display: none;
+    }
+
     .float-text h3 {
         font-size: 1.2rem;
     }
@@ -718,10 +723,57 @@ footer p {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
 
     .nav-header {
         display: none
+    }
+
+    .hero h2 {
+        font-size: 3.75rem;
+        line-height: 55px;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .hero-badge {
+        font-size: 13px;
+    }
+
+    .btn-servicos, .btn-wpp {
+        font-size: 0.75rem;
+    }
+
+    .section-servicos h2,
+    .section-galeria h2 {
+        font-size: 2.25rem;
+    }
+
+    .descricao-card {
+        font-size: 0.95rem;
+    }
+
+    #preco {
+        font-size: 1.1rem;
+    }
+
+    .section-agenda h2 {
+        font-size: 2.75rem;
+    }
+
+    .btn-agenda {
+        font-size: 0.75rem;
+    }
+
+    .right-footer h4,
+    .right-footer a {
+        font-size: 0.825rem;
+    }
+
+    .direitos {
+        font-size: 0.725rem;
     }
 
    .hero {
