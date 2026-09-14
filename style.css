@@ -279,6 +279,8 @@ header {
     background-color: #A67C52;
 
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
 }
 
@@ -594,10 +596,14 @@ footer p {
 
     .nav-hero {
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
     }
 
     .btn-servicos, .btn-wpp {
         font-size: 0.7rem;
+        white-space: nowrap;
     }
 
     .container-img {
@@ -641,60 +647,6 @@ footer p {
         font-size: 0.7rem;
     }
 
-    .hero h2 {
-        font-size: 3rem;
-        line-height: 50px;
-    }
-
-    .hero p {
-        font-size: 0.9rem;
-    }
-
-    .hero-badge {
-        font-size: 12px;
-    }
-
-    .btn-servicos, .btn-wpp {
-        font-size: 0.7rem;
-        white-space: nowrap;
-    }
-
-    .float-text h3 {
-        font-size: 1.2rem;
-    }
-
-    .float-text p {
-        font-size: 0.7rem;
-    }
-
-    .section-servicos h2 {
-        font-size: 2rem;
-    }
-
-    #preco {
-        font-size: 1rem;
-    }
-
-    .section-galeria h2 {
-        font-size: 2rem;
-    }
-
-    .section-agenda h2 {
-        font-size: 2.5rem;
-    }
-
-    .btn-agenda {
-        font-size: 0.7rem;
-    }
-
-    .right-footer h4, .right-footer a {
-        font-size: 0.8rem;
-    }
-
-    .direitos {
-        font-size: 0.7rem;
-    }
-
     .hero {
         grid-template-columns: 1fr;
         padding: 30px;
@@ -724,6 +676,10 @@ footer p {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .form-agenda {
+        width: inherit;
     }
 
     footer {
@@ -805,10 +761,6 @@ footer p {
         justify-content: center;
     }
 
-     .btn-servicos, .btn-wpp {
-        font-size: 0.7rem;
-    }
-
     .float-text{
         display: none;
     }
@@ -825,10 +777,6 @@ footer p {
     .section-agenda {
         justify-content: center;
         padding: 10px;
-    }
-
-     .card-galeria {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .card-agenda {
