@@ -571,6 +571,18 @@ footer p {
                                 Media queries
 ----------------------------------------------------------------------- */
 
+@media screen and (max-width: 768px) {
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="search"],
+  input[type="password"],
+  textarea,
+  select {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 576px) {
      .btn-reservar {
         font-size: 0.7rem;
@@ -602,8 +614,7 @@ footer p {
     }
 
     .btn-servicos, .btn-wpp {
-        font-size: 0.7rem;
-        white-space: nowrap;
+        font-size: 0.7rem; 
     }
 
     .container-img {
